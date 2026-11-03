@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header, nav, article, section, aside, footer{
+    background: lightgray;
+    border: 1px dashed black;
+    padding: 0.5em;
+    margin: 0.5em;
+}
