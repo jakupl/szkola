@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    color: #333;
+    background: #fff;
+}
+ 
+h1 {
+    margin: 10px 0 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: normal;
+}
+ 
+.box {
+    background: #c8c8c8;
+    border: 1px dashed #a0a0a0;
+    padding: 10px;
+    text-align: center;
+}
+ 
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+ 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.top .header {
+    width: 66.666%;
+    height: 50px;
+}
+ 
+.top .login {
+    width: 33.333%;
+    height: 50px;
+}
+ 
+.top .header,
+.top .login {
+    min-height: 50px;
+    height: auto;
+    padding: 30px 10px;
+}
+ 
+.nav {
+    padding: 15px;
+}
+ 
+.main .box {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.main .title {
+    font-size: 22px;
+}
+ 
+.aside .title {
+    font-size: 30px;
+}
+ 
+.aside-inner {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+ 
+ 
+.section {
+    padding: 15px 10px;
+}
+ 
+.section.ciemny {
+    background: #615f5f;
+    color: #fff;
+    border: none;
+}
+ 
+.aside-right {
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+ 
+.footer {
+    min-height: 50px;
+    padding: 40px 10px;
+}
+ 
+</style>
+</head>
+<body>
+ 
+<h1>06 Lachendro Jakub - Uklad.html</h1>
+ 
+<div class="row top box">
+    <header class="box header center">Nagłówek h:50px w:66.666%</header>
+    <div class="box login center">Panel logowania h:50px w:33.333%</div>
+</div>
+ 
+<nav class="box nav">Nawigacja</nav>
+
+<br>
+
+<div class="row main">
+    <aside class="box aside">
+        <div class="title">Panel boczny</div>
+        <div class="aside-inner">
+            <aside class="box" style="width: 66%;">66.666% h50</aside>
+            <aside class="box" style="width: 33%;">33.333% h50</aside>
+        </div>
+    </aside>
+ 
+    <article class="box">
+        <div class="title">Artykuł 01</div>
+        <section class="box section">Sekcja 01 01</section>
+        <section class="box section">Sekcja 02 01</section>
+    </article>
+ 
+    <article class="box">
+        <div class="title">Artykuł 02</div>
+        <section class="box section ciemny">Sekcja 01 02</section>
+        <section class="box section ciemny">Sekcja 02 02</section>
+    </article>
+ 
+    <aside class="box aside-right">Panel boczny</aside>
+</div>
+ 
+<footer class="box footer center">Stopka h50px</footer>
+ 
+</body>
+</html>
+ 
