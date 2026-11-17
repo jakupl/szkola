@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td[rowspan],td[colspan] {background-color: pink;}
+        caption{color: orangered;}
+        table {text-align: center;}
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>CW-A</caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td colspan="3">7</td>
+        </tr>
+    </table>
+    <table border="1">
+        <caption>CW-B</caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="3">3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>8</td>
+        </tr>
+    </table>
+    <table border="1">
+        <caption>CW-C</caption>
+        <tr>
+            <td style="background-color: gray;">Header</td>
+            <td style="background-color: gray;">Header</td>
+            <td style="background-color: gray;">Header</td>
+            <td style="background-color: gray;">Header</td>
+            <td style="background-color: gray;">Header</td>
+            <td style="background-color: gray;">Header</td>
+        </tr>
+        <tr>
+            <td colspan="3">Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+        </tr>
+        <tr>
+            <td>Cell</td>
+            <td colspan="3">Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+        </tr>
+        <tr>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td colspan="3">Cell</td>
+            <td>Cell</td>
+        </tr>
+        <tr>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td colspan="3">Cell</td>
+        </tr>
+        <tr>
+            <td style="border-color: red; color:red">Cell</td>
+            <td style="border-color: red;color:red">Cell</td>
+            <td style="border-color: red;color:red">Cell</td>
+            <td style="border-color: red;color:red">Cell</td>
+            <td style="border-color: red;color:red">Cell</td>
+            <td style="border-color: red;color:red">Cell</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">Cell</td>
+            <td style="border-color: lightgreen; color:lightgreen">Cell</td>
+            <td style="border-color: lightgreen; color:lightgreen">Cell</td>
+            <td rowspan="2" colspan="2">Cell</td>
+        </tr>
+        <tr>
+            <td style="border-color: blue; color:blue">Cell</td>
+            <td style="border-color: blue; color:blue">Cell</td>
+        </tr>
+    </table>
+</body>
+</html>

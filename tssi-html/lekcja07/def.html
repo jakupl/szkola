@@ -32,5 +32,36 @@
     Tabele niesymentryczne
     <table><caption>Nazwa</caption>Cala tabela</table>
     <figure><figcaption>Nazwa tabeli</figcaption><table>Cala tabela</table></figure>
+
+    Tabele zagniezdzone
+    <table border="3">
+        <tr>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">3</td>
+                    </tr>
+                
+                </table>
+            </tr>
+            <td>
+            <table border="1">
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                </tr>
+            </td>
+            </td>
+        </tr>
+
+    </table>
+
 </body>
 </html>
