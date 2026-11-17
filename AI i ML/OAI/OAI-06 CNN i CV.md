@@ -1,4 +1,4 @@
-**Sieci konwolucyjne** 
+## Sieci konwolucyjne 
 Rozdzielczość:
 480p = 854 * 480 = 409 920 px na ekranie
 720p = 1280 * 720 = 921 600px 
@@ -34,7 +34,7 @@ Najpierw wyciagane sa pojedyncze cechy. Potem wybierane są bardziej specyficzne
 Stride zamiast poruszac sie po 1 pixelu kernel porusza sie co 3 px czyli swoja szerokosc. Jest to parametr skoku. Redukuje to tez wymiarowość. 
 
 
-**Modele pretrenowane**:
+## Modele pretrenowane:
 Torch posiada zestaw pretrenowanych modeli do roznych zasosowac w module torchvision.models. Sa to glownie gotowe do uzycia lub dotrenowania sieci wyszkolone.
 Przykladowe modele:
 ![[Pasted image 20261024104439.png|684]]
@@ -47,8 +47,8 @@ Transformacja obrazu pomaga sieci nauczyc sie wyciagac cechy bez wzgledu na zawa
 Padding to dodanie wartosci 0 do zdjecia, bez tego kernel by przechodzil bez wartosci znajdujących się na bokach obrazu. 
 
 
-**Wizja Komputerowa** 
-Kroki CV:
+## Wizja komputerowa
+**Kroki CV**:
 1. Pobranie obrazu i klasyfikacja za pomocą CNN
 2. Znalezienie obiektu na obrazie, ulstalanie koordynatow polozenia centroidu.
 3. Oznaczenie obiektu bounding boxem
